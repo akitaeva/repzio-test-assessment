@@ -17,3 +17,10 @@ export default {
   }
 };
 </script>
+
+<style scoped lang="scss">
+#sidebar {
+  border-left: 2px solid #f9ba33;
+  background-color: limegreen;
+}
+</style>

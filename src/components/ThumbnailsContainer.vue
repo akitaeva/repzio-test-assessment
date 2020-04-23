@@ -1,14 +1,17 @@
 <template>
   <div class="product-thumbnails-container">
+    <div class="message">
+      <h3>{{ data.Message }}</h3>
+    </div>
     <product-thumbnail
       v-for="item in data.items"
       v-bind:key="item.ProductID"
       :itemName="item.ItemName"
       :description="item.Description"
       :dimensions="item.Dimensions"
+      :imageUrl="item.PhotoName"
       :basePrice="item.BasePrice"
       :inStock="item.OnHandQuantity"
-      :imageUrl="item.PhotoName"
     />
   </div>
 </template>
@@ -18,14 +21,11 @@ import data from "@/data.json";
 import Thumbnail from "@/components/Thumbnail";
 
 export default {
-  name: "ThumbnailsContainer",
+  name: " ThumbnailsContainer",
   data() {
     return {
       data: data
     };
-  },
-  props: {
-    msg: String
   },
   components: {
     "product-thumbnail": Thumbnail
@@ -37,6 +37,6 @@ export default {
 .product-thumbnails-container {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
+  padding: 1rem 2rem 3rem;
 }
 </style>

@@ -20,7 +20,7 @@ export default {
 
 <style scoped lang="scss">
 #portal {
-  max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 15rem;
 }

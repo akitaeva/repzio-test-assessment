@@ -771,7 +771,7 @@
         "ManufacturerID":772,
         "ItemID":"F31",
         "ItemName":"Tracery Cube with Tin Top",
-        "Description":"Metal table tops are a fun and exciting way to spice up the look of a room. Table has aged metal edges and a removable top for additional storage. Layered finishes are created through a multi layer process and are 100% hand finished. YOU WILL SEE LINES, S",
+        "Description":"Metal table tops are a fun and exciting way to spice up the look of a room. Table has aged metal edges and a removable top for additional storage. Layered finishes are created through a multi layer process and are 100% hand finished.",
         "Notes":"",
         "Dimensions":"24.5 X 17 X 17",
         "BasePrice":260.0000,
@@ -858,7 +858,7 @@
   "PriceLevel":0,
   "IncludePricing":true,
   "ShowBranding":true,
-  "Message":"\u003cp\u003eCheck out these great products I have selected for you.\u003c/p\u003e\u003cp\u003e  Email me back which ones you are interested in.\u003c/p\u003e",
+  "Message":"Check out these great products I have selected for you. Email me back which ones you are interested in.",
   "manufacturerSetting":{
      "TestMode":false,
      "ManufacturerSettingID":760,
