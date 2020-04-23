@@ -8,8 +8,8 @@ VueJS SPA featuring thumbnails of products, allowing for a seperate view of a si
 * **components** — All the components of the project that are not the main views
 * **shared** - The components intended for re-use in different parts of the app (subfolder of *components* )
 * **router** — All the routes of the project.
-* **store** (not done) — Intended for the Vuex constants.
-* **views** — The components that are routed (represent pages and they have routes).
+* **store** (*not done*) — Intended for the Vuex constants.
+* **views** — The components that are routed (represent pages and have their own routes).
 
 ## Notes
 
