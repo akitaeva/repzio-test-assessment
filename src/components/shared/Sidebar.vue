@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Cart from "@/components/Cart.vue";
+import Cart from "@/components/shared/Cart.vue";
 import SalesRepDetails from "@/components/SalesRepDetails.vue";
 
 export default {
@@ -20,7 +20,10 @@ export default {
 
 <style scoped lang="scss">
 #sidebar {
-  border-left: 2px solid #f9ba33;
-  background-color: limegreen;
+  border: 2px solid #f9ba33;
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 </style>

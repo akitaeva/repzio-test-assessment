@@ -1,9 +1,12 @@
 <template>
   <div id="header">
     <img alt="RepZio Logo" src="@/assets/RepZio-Logo.png" />
-    <div id="nav-links">
+    <div id="nav-links" v-if="!isMobile">
       <router-link to="/">Portal</router-link>
       <router-link to="/contact">Contact Us</router-link>
+    </div>
+    <div id="side-nav" v-else @click="toggleSideNav">
+      <img alt="SideNav" src="@/assets/menu-bars-outline.png" />
     </div>
   </div>
 </template>
@@ -11,8 +14,29 @@
 <script>
 export default {
   name: "Header",
-  props: {
-    msg: String
+  data() {
+    return {
+      isMobile: false
+    };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener("resize", this.getViewWidth);
+      this.getViewWidth();
+    });
+  },
+  methods: {
+    getViewWidth() {
+      this.isMobile = document.documentElement.clientWidth < 700;
+    },
+    toggleSideNav() {
+      alert(
+        "Apologies, building the functioning side nav drawer is beyound the scope of this assignment."
+      );
+    }
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.getViewWidth);
   }
 };
 </script>
@@ -50,6 +74,18 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 5vw;
+  margin-right: 10vw;
+
+  @media (max-width: 800px) {
+    margin-right: 5vw;
+  }
+}
+
+#side-nav {
+  display: flex;
+
+  img {
+    max-height: 2.5rem;
+  }
 }
 </style>

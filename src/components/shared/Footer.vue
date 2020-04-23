@@ -2,15 +2,6 @@
   <div id="footer"></div>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-  props: {
-    msg: String
-  }
-};
-</script>
-
 <style scoped lang="scss">
 #footer {
   padding: 2rem 1.5rem;
