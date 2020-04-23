@@ -1,11 +1,11 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="contact-info">
+    <h1>This is the contact page</h1>
   </div>
 </template>
 
 <style scoped lang="scss">
-.about {
+.contact-info {
   padding: 1rem 2rem;
 }
 </style>

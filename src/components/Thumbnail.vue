@@ -1,6 +1,7 @@
 <template>
   <div class="product-thumbnail">
-    <h1>{{ item.ItemName }}</h1>
+    <h3>{{ itemName }}</h3>
+    <router-link to="/product/:id">See Details</router-link>
   </div>
 </template>
 
@@ -14,17 +15,21 @@ export default {
       data: data
     };
   },
+  // props: ["itemName", "description"]
   props: {
-    msg: String
+    itemName: String,
+    description: String,
+    dimensions: String,
+    basePrice: Number,
+    inStock: Number,
+    imageUrl: String
   }
 };
 </script>
 
 <style scoped lang="scss">
-
 .product-thumbnail {
   padding: 1rem 2rem;
   border: 1px solid green;
-  }
 }
 </style>

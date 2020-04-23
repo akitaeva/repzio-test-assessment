@@ -36,5 +36,6 @@ export default {
 main {
   min-width: 90vw;
   max-width: 900px;
+  background-color: limegreen;
 }
 </style>
