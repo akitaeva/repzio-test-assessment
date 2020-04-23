@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Portal from "@/views/Portal";
-import ThumbnailsContainer from "@/components/ThumbnailsContainer.vue";
-import ProductDetails from "@/components/ProductDetails.vue";
+import Portal from "@/components/shared/Portal";
+import Catalogue from "@/views/Catalogue.vue";
+import ProductDetails from "@/views/ProductDetails.vue";
 
 Vue.use(VueRouter);
 
@@ -13,8 +13,9 @@ const routes = [
     component: Portal,
     children: [
       {
-        path: "catalogue",
-        component: ThumbnailsContainer
+        path: "",
+        name: "Catalogue",
+        component: Catalogue
       },
       {
         path: "product/:id",
